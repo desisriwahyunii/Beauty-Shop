@@ -1,2 +1,0 @@
-# Beauty-Shop
-Project PPB
