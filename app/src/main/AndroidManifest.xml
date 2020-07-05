@@ -10,15 +10,53 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.tutorial.TutorialActivity"></activity>
-        <activity android:name=".ui.home.DetailBeliActivity" />
-        <activity android:name=".ui.home.BeliActivity" />
-        <activity android:name=".ui.home.ProdukActivity" />
-        <activity android:name=".EminaaActivity" />
-        <activity android:name=".PixyActivity" />
-        <activity android:name=".MadamgieActivity" />
+
+        <activity android:name=".ui.home.DetailBeliActivity"/>
+
+        <activity android:name=".ui.home.BeliActivity"/>
+
+        <activity android:name=".ui.home.ProdukActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity">
+            </meta-data>
+        </activity>
+
+        <activity android:name=".EminaaActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity">
+            </meta-data>
+        </activity>
+
+        <activity android:name=".PixyActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity">
+            </meta-data>
+        </activity>
+
+        <activity android:name=".MadamgieActivity"
+        android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity">
+        </meta-data>
+        </activity>
+
 <!--        <activity android:name=".ui.menu.ShopMenu" />-->
 <!--        <activity android:name=".ui.beautyshop.Shop" />-->
-        <activity android:name=".WardahActivity" />
+        <activity android:name=".WardahActivity"
+            android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity">
+        </meta-data>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

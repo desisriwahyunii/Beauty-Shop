@@ -1,44 +1,27 @@
 package com.example.beautyshop.ui.home;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.ProgressDialog;
-import android.content.ContentResolver;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.View;
-import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.beautyshop.R;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
-import com.google.firebase.storage.UploadTask;
 
-import java.io.IOException;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class BeliActivity extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUST = 234;
     EditText etNama;
     EditText etAlamat;
+    EditText etKabupaten;
+    EditText etKecamatan;
     EditText etKode;
     EditText etJumlah;
     RadioGroup Bayar;
@@ -62,6 +45,8 @@ public class BeliActivity extends AppCompatActivity {
 
         etNama = (EditText) findViewById(R.id.et_nama);
         etAlamat = (EditText) findViewById(R.id.et_alamat);
+        etKabupaten = (EditText) findViewById(R.id.et_kabupaten);
+        etKecamatan = (EditText) findViewById(R.id.et_kecamatan);
         etKode = (EditText) findViewById(R.id.et_kode);
         etJumlah = (EditText) findViewById(R.id.et_jumlah);
         Bayar = (RadioGroup) findViewById(R.id.radiogroupbayar);
@@ -144,6 +129,8 @@ public class BeliActivity extends AppCompatActivity {
     public void getDataPembeli(){
         String nama = etNama.getText().toString();
         String alamat = etAlamat.getText().toString();
+        String kabupaten = etKabupaten.getText().toString();
+        String kecamatan = etKecamatan.getText().toString();
         String kode = etKode.getText().toString();
         String jumlah = etJumlah.getText().toString();
         String bayar = MBayar.getText().toString();
@@ -152,19 +139,21 @@ public class BeliActivity extends AppCompatActivity {
 
             String id = databaseData.push().getKey();
 
-            Data data = new Data(id, nama, alamat, kode, jumlah, bayar);
+            Data data = new Data(id, nama, alamat, kabupaten, kecamatan, kode, jumlah, bayar);
 
             databaseData.child(id).setValue(data);
 
             Toast.makeText(this, "Data berhasil", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "Kamu belum mengisi form pembelian", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "Kamu belum mengisi form nama", Toast.LENGTH_LONG).show();
         }
 
         Intent intent = new Intent(BeliActivity.this, DetailBeliActivity.class);
 
         intent.putExtra("Nama" , nama);
         intent.putExtra("Alamat", alamat);
+        intent.putExtra("Kabupaten", kabupaten);
+        intent.putExtra("Kecamatan", kecamatan);
         intent.putExtra("Kode", kode);
         intent.putExtra("Jumlah", jumlah);
         intent.putExtra("Bayar", bayar);

@@ -1,9 +1,9 @@
 package com.example.beautyshop.ui.tutorial;
 
-public class Video {
+public class video {
     String title, url;
 
-    public Video(){
+    public video(){
 
     }
 

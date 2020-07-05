@@ -36,7 +36,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         mView = itemView;
     }
 
-    public void setTutorial(final Application ctx, String title, final String url){
+    public void setVideo(final Application ctx, String title, final String url){
         TextView mTextView = mView.findViewById(R.id.Titletv);
         mExoplayerView = mView.findViewById(R.id.exoplayer_view);
 

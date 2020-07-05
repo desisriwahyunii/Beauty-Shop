@@ -7,18 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
 import com.example.beautyshop.EminaaActivity;
 import com.example.beautyshop.MadamgieActivity;
 import com.example.beautyshop.PixyActivity;
 import com.example.beautyshop.R;
 import com.example.beautyshop.WardahActivity;
 
-public class HomeFragment extends Fragment {
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-//    private HomeViewModel homeViewModel;
+public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

@@ -15,4 +15,10 @@
     <string name="beauty_tutorial">Beauty Tutorial</string>
     <string name="beauty_review">Beauty Review</string>
     <string name="beauty_shop">Beauty Shop</string>
+    <string name="notification_title">Notification from Beauty Shop</string>
+    <string name="notification_text">Pesanan telah terkirim, harap verifikasi lewat email anda</string>
+    <string name="update">Update Notification</string>
+    <string name="notification_channel_name">Mascot Notification</string>
+    <string name="notification_channel_description">Notification from Mascot</string>
+    <string name="jika_tf">Harap isi NAMA LENGKAP dan UPLOAD bukti transfer jika memilih pembayaran Transfer!! (Abaikan jika bayar di tempat)</string>
 </resources>
