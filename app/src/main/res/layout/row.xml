@@ -37,7 +37,7 @@
                 android:id="@+id/exoplayer_view"
                 android:background="@android:color/black"
                 app:resize_mode="fill"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center" />
 
         </LinearLayout>
 

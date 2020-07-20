@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "129883384939",
-    "firebase_url": "https://beauty-shop-26144.firebaseio.com",
-    "project_id": "beauty-shop-26144",
-    "storage_bucket": "beauty-shop-26144.appspot.com"
+    "project_number": "909549667079",
+    "firebase_url": "https://beauty-shop-e9d17.firebaseio.com",
+    "project_id": "beauty-shop-e9d17",
+    "storage_bucket": "beauty-shop-e9d17.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:129883384939:android:0cf04c7bf8ad480432d52e",
+        "mobilesdk_app_id": "1:909549667079:android:5bd0e8fb1bf7a69204bba2",
         "android_client_info": {
           "package_name": "com.example.beautyshop"
         }
       },
       "oauth_client": [
         {
-          "client_id": "129883384939-nida92qme8htdqvb7p2chn3h0rp865cr.apps.googleusercontent.com",
+          "client_id": "909549667079-gnvbgav0nf94681ladrejufai9cjpok2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA3kqDU2PF6jsU3TXEp8x0qdMLSSRJCHaY"
+          "current_key": "AIzaSyAfaFC9E7OFzg_wGoLoMSrIaJ3pFFs0wNU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "129883384939-nida92qme8htdqvb7p2chn3h0rp865cr.apps.googleusercontent.com",
+              "client_id": "909549667079-gnvbgav0nf94681ladrejufai9cjpok2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

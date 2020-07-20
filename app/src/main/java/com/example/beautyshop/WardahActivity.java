@@ -7,9 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.beautyshop.ui.home.Produk;
-import com.example.beautyshop.ui.home.RecyclerViewAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +17,6 @@ public class WardahActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wardah);
-
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             if (bundle.getString("Beauty") != null) {

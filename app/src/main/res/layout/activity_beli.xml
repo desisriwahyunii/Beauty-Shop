@@ -4,228 +4,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.BeliActivity"
-    android:background="@drawable/bg_emina">
+    tools:context=".BeliActivity">
 
-    <TextView
-        android:id="@+id/judul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Form Pembelian"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    <View-->
+<!--        android:id="@+id/wave"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="@drawable/ic_wave2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/topView" />-->
+
+
     <TextView
-        android:id="@+id/tv_nama"
+        android:id="@+id/tv_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:text="Nama :"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/judul"/>
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="27dp"
+        android:text="Form Pembelian"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <EditText
-        android:id="@+id/et_nama"
+        android:id="@+id/Nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="15dp"
-        android:textSize="15dp"
-        android:hint="Masukkan Nama Lengkap"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:inputType="textPersonName"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_nama"
-        app:layout_constraintTop_toBottomOf="@id/judul"/>
-
-    <TextView
-        android:id="@+id/tv_no"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-        android:text="No.Telp/WA:"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_nama"/>
+        android:hint="Nama"
+        android:drawableStart="@drawable/person"
+        android:background="@drawable/round_border"
+        app:layout_constraintTop_toBottomOf="@id/tv_top" />
 
     <EditText
-        android:id="@+id/et_no"
+        android:id="@+id/Alamat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:padding="10dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="Masukkan No. Wa"
-        android:inputType="phone"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_no"
-        app:layout_constraintTop_toBottomOf="@id/et_nama" />
-
-    <TextView
-        android:id="@+id/tv_alamat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-        android:text="Alamat:"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_no"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Alamat"
+        android:drawableStart="@drawable/location"
+        android:background="@drawable/round_border"
+        app:layout_constraintTop_toBottomOf="@id/Nama" />
 
     <EditText
-        android:id="@+id/et_alamat"
+        android:id="@+id/Telp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:padding="10dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="Masukkan Alamat"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_alamat"
-        app:layout_constraintTop_toBottomOf="@id/et_no" />
+        android:inputType="number"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Telepon"
+        android:drawableStart="@drawable/contact"
+        android:background="@drawable/round_border"
+        app:layout_constraintTop_toBottomOf="@id/Alamat" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Kategori Produk :"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:drawableStart="@drawable/produk"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/Produk"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/Produk"/>-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/Produk"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="16dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:hint="Pilih Kategori Produk"-->
+<!--        android:entries="@array/kategori_produk"-->
+<!--        app:layout_constraintTop_toTopOf="@id/Telp"-->
+<!--        app:layout_constraintRight_toRightOf="parent"/>-->
 
     <TextView
-        android:id="@+id/tv_kabupaten"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Kode Produk :"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="410dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="16dp"
-        android:text="Kota/Kabupaten:"
+        android:drawableStart="@drawable/produk"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_alamat"/>
+        app:layout_constraintTop_toBottomOf="@id/Telp"/>
+
+    <Spinner
+        android:id="@+id/kodeProduk"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Kode Produk"
+        android:entries="@array/kode_produk"
+        android:drawableStart="@drawable/code"
+        app:layout_constraintTop_toBottomOf="@id/Telp"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <EditText
-        android:id="@+id/et_kabupaten"
+        android:id="@+id/Jumlah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="Masukkan Kota/Kabupaten"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_kabupaten"
-        app:layout_constraintTop_toBottomOf="@id/et_alamat" />
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:textSize="19dp"
+        android:hint="Jumlah Produk"
+        android:drawableStart="@drawable/jumlah"
+        android:background="@drawable/round_border"
+        app:layout_constraintTop_toBottomOf="@id/kodeProduk" />
 
     <TextView
-        android:id="@+id/tv_kecamatan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-        android:text="Kecamatan:"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_kabupaten"/>
-
-    <EditText
-        android:id="@+id/et_kecamatan"
+        android:id="@+id/Pembayaran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:padding="10dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="Masukkan Kecamatan"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_kecamatan"
-        app:layout_constraintTop_toBottomOf="@id/et_kabupaten" />
-
-    <TextView
-        android:id="@+id/tv_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-        android:text="Email:"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_kecamatan"/>
-
-    <EditText
-        android:id="@+id/et_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="Masukkan Email"
-        android:inputType="textEmailAddress"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_email"
-        app:layout_constraintTop_toBottomOf="@id/et_kecamatan" />
-
-    <TextView
-        android:id="@+id/tv_kode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-        android:text="Kode Produk:"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_email"/>
-
-    <EditText
-        android:id="@+id/et_kode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="W01,W02,M01,dst...."
-        android:inputType="text"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_kode"
-        app:layout_constraintTop_toBottomOf="@id/et_email" />
-
-    <TextView
-        android:id="@+id/tv_jumlah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-        android:text="Jumlah:"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_kode"/>
-
-    <EditText
-        android:id="@+id/et_jumlah"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="2,8,9,dst.....(urutan sesuai kode)"
-        android:inputType="text"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_jumlah"
-        app:layout_constraintTop_toBottomOf="@id/et_kode" />
-
-    <TextView
-        android:id="@+id/tv_bayar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-        android:text="Pembayaran:"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_jumlah"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Pembayaran :"
+        android:drawableStart="@drawable/produk"
+        app:layout_constraintTop_toBottomOf="@id/Jumlah" />
 
     <RadioGroup
         android:id="@+id/radiogroupbayar"
@@ -233,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_bayar">
+        app:layout_constraintTop_toBottomOf="@id/Pembayaran">
 
         <RadioButton
             android:id="@+id/transfer"
@@ -243,25 +172,115 @@
             android:text="Transfer"/>
 
         <RadioButton
-            android:id="@+id/cod"
+            android:id="@+id/bayardiTempat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bayar di tempat"/>
+            android:text="Bayar di tempat" />
     </RadioGroup>
 
+    <Button
+        android:id="@+id/btnTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Cek Total"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroupbayar"/>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/jml"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/Jumlah"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/plus"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/round_border"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:text="+"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/angka"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="0"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_toRightOf="@+id/plus"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/min"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="-"-->
+<!--        android:background="@drawable/round_border"-->
+<!--        android:layout_toRightOf="@+id/angka"-->
+<!--        android:layout_marginLeft="30dp"/>-->
+<!--    </RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/hargaSatuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/harga"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="16dp"
+        android:text="Harga :"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTotal" />
+
+    <TextView
+        android:id="@+id/hrgSatuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="10dp"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="@id/hargaSatuan"
+        app:layout_constraintLeft_toLeftOf="@id/Harga"
+        app:layout_constraintTop_toBottomOf="@id/btnTotal"/>
+
+    <TextView
+        android:id="@+id/Harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/harga"
+        android:padding="16dp"
+        android:text="Total Harga : "
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/hargaSatuan"
+        app:layout_constraintTop_toBottomOf="@id/btnTotal" />
+
+    <TextView
+        android:id="@+id/hrgTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="200dp"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="@id/Harga"
+        app:layout_constraintLeft_toLeftOf="@id/Harga"
+        app:layout_constraintTop_toBottomOf="@id/btnTotal"/>
 
     <Button
-        android:id="@+id/btn_beli"
+        android:id="@+id/btnBeli"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="Selanjutnya"
-        android:textColor="#FFFFFF"
-        android:background="#FF32232D"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radiogroupbayar" />
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Berikutnya"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_bg"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

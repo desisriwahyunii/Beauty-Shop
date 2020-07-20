@@ -1,24 +1,82 @@
 <resources>
     <string name="app_name">Beauty Shop</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Beauty Shop</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-
-    <string name="home_second">Home Second</string>
-    <string name="beauty_tutorial">Beauty Tutorial</string>
-    <string name="beauty_review">Beauty Review</string>
-    <string name="beauty_shop">Beauty Shop</string>
-    <string name="notification_title">Notification from Beauty Shop</string>
-    <string name="notification_text">Pesanan telah terkirim, harap verifikasi lewat email anda</string>
+    <string name="notification_title">Beauty Shop</string>
+    <string name="notification_text">Pesanan diproses, harap verifikasi lewat email anda</string>
     <string name="update">Update Notification</string>
     <string name="notification_channel_name">Mascot Notification</string>
     <string name="notification_channel_description">Notification from Mascot</string>
-    <string name="jika_tf">Harap isi NAMA LENGKAP dan UPLOAD bukti transfer jika memilih pembayaran Transfer!! (Abaikan jika bayar di tempat)</string>
+
+    <string-array name="kategori_produk">
+        <item>Wardah</item>
+        <item>Emina</item>
+        <item>Madame Gie</item>
+        <item>Pixy</item>
+    </string-array>
+
+    <string-array name="kode_produk">
+        <item>Pilih Kode Produk</item>
+        <item>W01</item>
+        <item>W02</item>
+        <item>W03</item>
+        <item>W04</item>
+        <item>W05</item>
+        <item>W06</item>
+        <item>W07</item>
+        <item>W08</item>
+        <item>W09</item>
+        <item>W010</item>
+        <item>W011</item>
+        <item>W012</item>
+        <item>W013</item>
+        <item>W014</item>
+        <item>W015</item>
+        <item>W016</item>
+        <item>W017</item>
+        <item>W018</item>
+        <item>W019</item>
+        <item>W020</item>
+        <item>W021</item>
+        <item>E01</item>
+        <item>E02</item>
+        <item>E03</item>
+        <item>E04</item>
+        <item>E05</item>
+        <item>E06</item>
+        <item>E07</item>
+        <item>E08</item>
+        <item>E09</item>
+        <item>E010</item>
+        <item>E011</item>
+        <item>E012</item>
+        <item>E013</item>
+        <item>E014</item>
+        <item>E015</item>
+        <item>E016</item>
+        <item>E017</item>
+        <item>E18</item>
+        <item>E019</item>
+        <item>E020</item>
+        <item>E021</item>
+        <item>P01</item>
+        <item>P02</item>
+        <item>P03</item>
+        <item>P04</item>
+        <item>P05</item>
+        <item>P06</item>
+        <item>P07</item>
+        <item>P08</item>
+        <item>P09</item>
+        <item>P010</item>
+        <item>P011</item>
+        <item>P012</item>
+        <item>P013</item>
+        <item>P014</item>
+        <item>P015</item>
+        <item>P016</item>
+        <item>P017</item>
+        <item>P018</item>
+        <item>P019</item>
+        <item>P020</item>
+        <item>P021</item>
+    </string-array>
 </resources>

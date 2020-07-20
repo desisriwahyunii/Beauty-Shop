@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "260454934409",
+    "firebase_url": "https://beauty-shop-10d57.firebaseio.com",
+    "project_id": "beauty-shop-10d57",
+    "storage_bucket": "beauty-shop-10d57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260454934409:android:af581484db132789a82358",
+        "android_client_info": {
+          "package_name": "com.example.beautyshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260454934409-d9nna2rmhk901kn8o0g42n1b4jjd75cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClRkadHTz3fWekhXx0w2htqFv8uQGMCRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260454934409-d9nna2rmhk901kn8o0g42n1b4jjd75cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

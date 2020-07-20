@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.ProdukActivity">
+    tools:context=".ProdukActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -60,8 +60,8 @@
                 android:layout_height="match_parent"
                 android:text="BELI"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:background="#FF32232D"/>
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_bg"/>
 
         </LinearLayout>
 
